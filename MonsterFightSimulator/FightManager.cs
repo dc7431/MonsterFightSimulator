@@ -18,7 +18,10 @@
                 }
                 j++;
                 if (j > 200)
-                    break;  //break if no monster dies text
+                {
+                    Console.WriteLine("Sorry I need to cut the line Money doesn't grow on trees.");
+                    break;
+                }
             }
             Console.ReadLine();
         }
