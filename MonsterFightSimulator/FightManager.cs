@@ -2,8 +2,9 @@
 {
     internal class FightManager
     {
+        private static FightManager instance;
         
-        public static readonly FightManager Instance = new FightManager() ;
+        public static FightManager Instance { get { return instance ??= new FightManager(); } }
 
         public void StartBattle()
         {   

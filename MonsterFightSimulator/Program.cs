@@ -11,11 +11,11 @@
             Console.WriteLine("Welcome to HELL!!!");
             //Thread.Sleep(2000);
             Console.Clear();
-
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            SpawnManager.Instance.SpawnMonsters();
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
-            Console.WriteLine("Begin");
-            Thread.Sleep(5000);
+            //Console.WriteLine("Begin");
+            //Thread.Sleep(5000);
             Console.Clear();
 
             FightManager.Instance.StartBattle();

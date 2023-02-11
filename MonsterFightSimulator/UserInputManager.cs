@@ -11,7 +11,7 @@ namespace MonsterFightSimulator
         /// <param name="regex">The regex to match</param>
         /// <param name="failedMessage">The message to show if the input did not match.</param>
         /// <returns>The matching user input</returns>
-        public static string WaitForInput(string input, Regex regex, string failedMessage = "Given input is not within range. Try again...")
+        public static string WaitForInput(string input, Regex regex, string failedMessage = "Given input does not match pattern. Try again...")
         {
             while (!regex.IsMatch(input))
             {
