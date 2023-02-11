@@ -25,29 +25,11 @@ namespace MonsterFightSimulator
             this.maxAttack = maxAttack;
             
             Console.WriteLine($"Please enter the amount of health for your {this.GetType().Name}. Values allowed between {minHealth} and {maxHealth}.");
-            this.health = CheckValues(minHealth, maxHealth);
+            this.health = UserInputManager.CheckValues(minHealth, maxHealth);
             Console.WriteLine($"Please enter the amount of attack for your {this.GetType().Name}. Values allowed between {minAttack} and {maxAttack}.");
-            this.attackDamage = CheckValues(minAttack, maxAttack);
+            this.attackDamage = UserInputManager.CheckValues(minAttack, maxAttack);
         }
-
-        protected virtual float CheckValues(float min, float max, Regex regex = null)
-        {
-            if (regex == null)
-                regex = new Regex("^[1-9]{1}[0-9]+$");
-            float value = 0;
-            while (true)
-            {
-                if (float.TryParse(UserInputManager.WaitForInput(Console.ReadLine(), regex), out float value2))
-                {
-                    value = value2;
-                }
-                if (value >= min && value <= max)
-                    break;
-                Console.WriteLine("The value is not within range. Try again...");
-            }
-            return value;
-        }
-
+        
         public virtual void Attack(Monster target)
         {
             try
