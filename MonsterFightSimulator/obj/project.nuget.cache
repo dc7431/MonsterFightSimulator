@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CKaVF8D8kqip02sD4zu4EQGfdFZcxI9n9ayotUPX64TfTpfby3FNm2wujydDjdXfCR7yEFNiGCZK3PHlfHQrzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DennisCernicenco\\Downloads\\Dennis_Cernicenco_Portfolio_4FSC0PD001\\1_Monsterkampfsimulator\\Source\\MonsterFightSimulator\\MonsterFightSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DennisCernicenco\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\DennisCernicenco\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\DennisCernicenco\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\DennisCernicenco\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
