@@ -35,15 +35,15 @@ namespace MonsterFightSimulator
             SpawnManager.Instance.SpawnMonster(this);
         }
 
-        public void Attack(Monster? target)
+        public virtual void Attack(Monster target)
         {
-            if (target != null)
-            {
+            try
+            { 
                 target.TakeDamage(AttackDamage);
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine(" Error: Target does not exist!");
+                Console.WriteLine(e);
             }
         }
 

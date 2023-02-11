@@ -7,16 +7,23 @@ namespace MonsterFightSimulator
         private float extraDamage;
         private float minExtraDamage;
         private float maxExtraDamage;
+        private float extraDamageChance = 0.4f;
+        private Random random = new Random();
 
         public Witch(float minExtraDamage, float maxExtraDamage) : base(10, 180, 1, 70)
         {
             this.minExtraDamage = minExtraDamage;
             this.maxExtraDamage = maxExtraDamage;
         }
-        
-        public float ReceivesMoreDamage() //TODO: use this in override TakeDamage
+
+        public override void TakeDamage(float damage)
         {
-            return (float)(this.Health * 0.4);
+            if (random.NextSingle() <= extraDamageChance)
+            {
+                damage *= extraDamage;
+                Console.WriteLine("Critical Hit");
+            }
+            base.TakeDamage(damage);
         }
 
         protected override void Spawn()

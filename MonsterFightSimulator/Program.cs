@@ -6,12 +6,11 @@
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Booting Up...");
-            Thread.Sleep(5000);
+            //Thread.Sleep(5000);
             Console.Clear();
             Console.WriteLine("Welcome to HELL!!!");
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
             Console.Clear();
-            SpawnManager.Instance.SpawnMonsters();
 
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.Clear();
